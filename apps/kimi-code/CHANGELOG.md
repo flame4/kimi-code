@@ -1,5 +1,21 @@
 # @moonshot-ai/kimi-code
 
+## 0.22.1
+
+### Patch Changes
+
+- [#1303](https://github.com/MoonshotAI/kimi-code/pull/1303) [`2639786`](https://github.com/MoonshotAI/kimi-code/commit/2639786ce578f15c020a2c11c344797dae18de61) - Fix the TUI crashing when the terminal is resized to a very narrow width while the input contains CJK or emoji text.
+
+- [#1301](https://github.com/MoonshotAI/kimi-code/pull/1301) [`c3653a1`](https://github.com/MoonshotAI/kimi-code/commit/c3653a1c50ffa3856484599e132980628eb9fca4) - Show an up arrow on the web composer send button.
+
+- [#1290](https://github.com/MoonshotAI/kimi-code/pull/1290) [`3ea84a5`](https://github.com/MoonshotAI/kimi-code/commit/3ea84a56e4dfdeaddd58add5b269be0342f3f986) - Fix the session search dialog showing a horizontal scrollbar for long session titles or snippets.
+
+- [#1293](https://github.com/MoonshotAI/kimi-code/pull/1293) [`6a469b3`](https://github.com/MoonshotAI/kimi-code/commit/6a469b3e07022e56b29b1fd8a7c58df36b2111fe) - Refresh the web UI icon set and unify the message copy and undo button hover states and tooltips.
+
+- [#1283](https://github.com/MoonshotAI/kimi-code/pull/1283) [`ea55911`](https://github.com/MoonshotAI/kimi-code/commit/ea55911062eefcb0414cfddb84c8a4494c45f363) - Sharpen the conversation-compaction handoff prompt so resumed sessions continue more reliably: the summary now leads with the intent of the latest request instead of re-transcribing it, carries forward tool results (not just the commands that produced them), separates settled decisions from still-open questions, names the context the next turn must re-check, matches the conversation's language, and stays proportional to the task. Also corrects the system prompt's description of the post-compaction shape.
+
+- [#1295](https://github.com/MoonshotAI/kimi-code/pull/1295) [`77eb3a9`](https://github.com/MoonshotAI/kimi-code/commit/77eb3a9fe40c93fa32e335f07160b8128355bab6) - Save shell commands to input history and recall them in bash mode. Press Up on an empty `!` prompt to browse previous shell commands.
+
 ## 0.22.0
 
 ### Minor Changes
